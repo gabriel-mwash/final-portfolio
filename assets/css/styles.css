@@ -1,0 +1,99 @@
+.hero-content {
+  max-width: 600px;
+  margin: auto;
+}
+
+.row {
+  /*min-height: 50vh;*/
+  margin-bottom: 0px;
+}
+
+@media (min-width: 992px) {
+  div {
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-message h1 {
+    font-size: 78px;
+  }
+}
+
+@media (max-width: 1190px) {
+  .hero-message h1 {
+    font-size: 49px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-image {
+    height: 60vh;
+  }
+}
+
+@media (min-width: 576px) {
+  .hero-image {
+    min-height: 100vh;
+  }
+}
+
+.nav-item a:hover {
+}
+
+.card {
+  border-radius: 10px;
+  border: none;
+  height: 100%;
+  /*padding: 20px;*/
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+  border-radius: 8px;
+}
+
+.btn-project {
+  width: 50%;
+  background-color: #cdcaca;
+  color: #212529;
+  border: 2px solid #212529;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-project:hover {
+  background-color: #212529;
+  color: #cdcaca;
+  transform: scale(1.1);
+}
+
+.about-image {
+  object-fit: cover;
+  object-position: center;
+}
+
+.btn-xl.btn-about:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.nav-item a:hover {
+  text-decoration: underline;
+  text-shadow: 0 0 5px #0d6efd, 0 0 10px #0d6efd, 0 0 20px #0d6efd;
+}
+
+.verify-badge {
+  padding: 20px;
+  color: #cdcaca;
+}
+
+.verify-badge {
+  padding: 20px;
+  color: #cdcaca;
+  text-decoration: none;
+}
+
