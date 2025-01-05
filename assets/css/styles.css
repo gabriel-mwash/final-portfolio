@@ -1,6 +1,40 @@
+body {
+  background: #cccccc;overflow-x: hidden;
+}
+
+.navbar {
+  height: 80px;
+  color: #212529;
+  background: #212529;
+  opacity: 0.77;
+}
+
+.navbar-brand {
+  color: rgb(238,242,245);
+  font-weight: bold;
+}
+
+.navbar-toggler {
+  border-color: rgb(238,242,245);
+}
+
+.navbar-toggler-icon {
+  color: rgb(238,242,245);
+}
+
 .hero-content {
   max-width: 600px;
   margin: auto;
+}
+
+.hero-message h1 , .hero-message p {
+  text-shadow: 5px 5px 4px; font-weight: bold;
+  font-weight: bold;
+}
+
+.btn-hero {
+  text-align: center;
+  background: #212529;
 }
 
 .row {
@@ -8,9 +42,22 @@
   margin-bottom: 0px;
 }
 
-@media (min-width: 992px) {
-  div {
+.hero-image {
+  background-image: url(/assets/img/gabu_grey.png);
+  background-repeat: no-repeat;
+  background-color:#cdcaca;
+  background-size: cover, auto;
+}
+
+
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    background-color: black;
+    margin-right: auto;
+    display: inline-block;
   }
+
 }
 
 @media (min-width: 1200px) {
@@ -37,7 +84,66 @@
   }
 }
 
-.nav-item a:hover {
+
+.nav-item {
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  margin: 5px;
+
+}
+
+.about-text {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(33, 37, 41);
+  background: black;
+}
+
+.about-text p {
+  text-align: center;
+  color: #cdcaca;
+  text-transform: uppercase;
+  font-size: 21px;
+  padding: 1rem;
+  line-height: 1.8;
+  font-weight: bold;
+  animation: fadeIn 1.5s ease-out;
+  text-shadow: 5px 5px 18px;
+}
+
+.about-text .btn {
+  text-align: center;
+  background: #212529;
+  width: 50%;
+  margin: 20px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+}
+
+
+.about-image {
+  background: url(/assets/img/about-image2.png) center / cover no-repeat black;
+  color: black;
+  height: 100vh;
+}
+
+.div-text-center {
+  justify-content: center;
+  align-items: center;
+  height: 10vh; 
+  background-color:black;
+  text-align: center;
+  padding: 0px;
+}
+
+.div-text-center h1, .div-text-center p {
+  font-weight: bold;
+  color: #cdcaca;
+  text-align: center;
 }
 
 .card {
@@ -54,7 +160,9 @@
 }
 
 .card-image {
+  width: 100%; height: 60%;
   border-radius: 8px;
+  text-align: center;
 }
 
 .btn-project {
@@ -71,10 +179,6 @@
   transform: scale(1.1);
 }
 
-.about-image {
-  object-fit: cover;
-  object-position: center;
-}
 
 .btn-xl.btn-about:hover {
   transform: translateY(-5px);
@@ -97,3 +201,66 @@
   text-decoration: none;
 }
 
+.cert-card img {
+  height: 50%;
+  width: 50%;
+  object-position: center;
+  object-fit: contain;
+}
+
+.cert-card {
+  display: flex;
+  height: 30vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.verify-badge:hover {
+  text-decoration: underline;
+  transform: translateX(2px);
+}
+
+.text-center {
+  margin: 16px 0px 16px;
+}
+
+.text-center {
+  color: #cdcaca;
+}
+
+.subsections {
+  display: flex;
+  flex-wrap: wrap;
+  /*gap: 1rem;*/
+  /*height: 90vh;*/
+  margin: 1rem;
+}
+
+.subsection {
+  /*position: relative;*/
+  background-color: #cdcaca;
+  padding: 2rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 40vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.subsection:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.subsection:nth-child(odd) {
+  /*margin-top: 12rem;*/
+}
+
+.subsection:nth-child(even) {
+  /*margin-top: 6rem;*/
+}
