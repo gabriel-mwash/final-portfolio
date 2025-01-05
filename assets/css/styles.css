@@ -38,7 +38,8 @@ body {
 }
 
 .row {
-  margin: 0px;
+  /*min-height: 50vh;*/
+  margin-bottom: 0px;
 }
 
 .hero-image {
@@ -149,7 +150,6 @@ body {
   border-radius: 10px;
   border: none;
   height: 100%;
-  padding: 0px;
   /*padding: 20px;*/
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
