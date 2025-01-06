@@ -230,6 +230,13 @@ body {
   color: #cdcaca;
 }
 
+/* portfolio */
+.nav-proj-btns {
+  background-color: black;
+  height: 10vh;
+  margin: 0px; padding: 0px;
+}
+
 .subsections {
   display: flex;
   flex-wrap: wrap;
