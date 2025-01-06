@@ -239,24 +239,31 @@ body {
 
 .subsections {
   display: flex;
-  flex-wrap: wrap;
-  /*gap: 1rem;*/
-  /*height: 90vh;*/
-  margin: 1rem;
+  background-color: black;
 }
 
 .subsection {
-  /*position: relative;*/
-  background-color: #cdcaca;
-  padding: 2rem;
-  border-radius: 8px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: 40vh;
-  overflow: hidden;
+  margin: 20px 0px 20px;
   display: flex;
+  flex-direction: column;
+  background-color: #cdcaca;
+  border-radius: 31rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; */
+  overflow: hidden;
   align-items: center;
+}
+
+
+.subsection h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.subsection p {
+  font-weight: bold;
+  font-size: 20px;
   text-align: center;
-  justify-content: center;
+  line-height: 1.8rem;
 }
 
 .subsection:hover {
@@ -264,10 +271,19 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.subsection:nth-child(odd) {
-  /*margin-top: 12rem;*/
+.about-hero-img {
+  background: url(/assets/img/image-contact1.png) center / cover no-repeat;
+
 }
 
-.subsection:nth-child(even) {
-  /*margin-top: 6rem;*/
+.contact-msg {
+  height: fit-content;
+  font-size: 34px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  background-color: black;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
 }
