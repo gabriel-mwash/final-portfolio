@@ -94,22 +94,18 @@ body {
 }
 
 .about-text {
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  color: rgba(33, 37, 41);
+  flex-direction: column;
   background: black;
 }
 
 .about-text p {
-  text-align: center;
+  text-align: left;
   color: #cdcaca;
   text-transform: uppercase;
-  font-size: 21px;
-  padding: 1rem;
-  line-height: 1.8;
-  font-weight: bold;
-  animation: fadeIn 1.5s ease-out;
+  font-size: 25px;
+  font-weight: bolder;
+  /*animation: fadeIn 1.5s ease-out;*/
   text-shadow: 5px 5px 18px;
 }
 
